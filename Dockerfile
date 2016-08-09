@@ -4,7 +4,7 @@
 # Pull base image.
 # Fork from kdelfour/cloud9-docker
 FROM kdelfour/supervisor-docker
-MAINTAINER KWANG KIM <kkim@qcc.cuny.edu>
+MAINTAINER  kdelfour
 
 # http://askubuntu.com/q/506158
 # https://github.com/phusion/baseimage-docker/issues/58
