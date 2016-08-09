@@ -2,8 +2,9 @@
 # Based on a work at https://github.com/docker/docker.
 # ------------------------------------------------------------------------------
 # Pull base image.
+# Fork from kdelfour/cloud9-docker
 FROM kdelfour/supervisor-docker
-MAINTAINER Kevin Delfour <kevin@delfour.eu>
+MAINTAINER KWANG KIM <kkim@qcc.cuny.edu>
 
 # http://askubuntu.com/q/506158
 # https://github.com/phusion/baseimage-docker/issues/58
@@ -23,7 +24,7 @@ RUN apt-get install -y nodejs
     
 # ------------------------------------------------------------------------------
 # Install Cloud9
-RUN git clone https://github.com/c9/core.git /cloud9
+RUN git clone https://github.com/kwangkim/core.git /cloud9
 WORKDIR /cloud9
 RUN scripts/install-sdk.sh
 
