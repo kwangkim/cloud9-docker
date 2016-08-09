@@ -7,7 +7,11 @@ MAINTAINER Kevin Delfour <kevin@delfour.eu>
 
 # ------------------------------------------------------------------------------
 # Install base
+# http://askubuntu.com/q/506158
 RUN apt-get update
+
+RUN DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get install -y build-essential g++ curl libssl-dev apache2-utils git libxml2-dev sshfs
 
 # ------------------------------------------------------------------------------
